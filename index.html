@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Intro component with sign up form</title>
+</head>
+
+<body>
+  <!-- CONTENEDOR PRINCIPAL -->
+  <main class="container">
+    <!-- ZONA DE CONTENIDO -->
+    <article class="content">
+      <h1 class="content_title">
+        Learn to code by watching others
+      </h1>
+      <p class="content_parag">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </article>
+    <!-- ZONA DE FORMULARIO -->
+    <article class="form_side">
+      <section class="header_form">
+        <h2>Try it free 7 days</h2>
+        <p>then $20/mo. thereafter</p>
+      </section>
+      <!-- FORMULARIO -->
+      <form action="#" class="form" id="form">
+        <input type="name" placeholder="First Name" class="input_form" id="first_name"
+          onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)) || (event.charCode = 32 )">
+        <p class="error_msg" id="error_first_name"></p>
+        <input type="text" placeholder="Last Name" class="input_form" id="last_name"
+          onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)) || (event.charCode = 32 )">
+        <p class="error_msg" id="error_last_name"></p>
+        <input type="text" placeholder="Email Address" class="input_form" id="email">
+        <p class="error_msg" id="error_email"></p>
+        <input type="password" placeholder="Password" class="input_form" id="password">
+        <p class="error_msg" id="error_password"></p>
+        <input type="submit" value="CLAIM YOUR FREE TRIAL" class="input_submit" id="btn_submit">
+        <small class="legal_text">
+          By clicking the button, you are agreeing to our <span>Terms and Services</span>
+        </small>
+      </form>
+    </article>
+  </main>
+</body>
+
+</html>
